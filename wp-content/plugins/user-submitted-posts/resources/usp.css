@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* 
+	User Submitted Posts - CSS for HTML5 form
+	http://perishablepress.com/user-submitted-posts/
+	Complete list of CSS hooks for the submission form @ http://m0n.co/e
+*/
+div#user-submitted-posts { width: 100%; }
+div#user-submitted-posts fieldset { margin: 10px 0; border: 0; }
+div#user-submitted-posts fieldset label { float: left; width: 20%; }
+div#user-submitted-posts fieldset input.usp-input { float: left; width: 60%; }
+div#user-submitted-posts fieldset input.usp-input.usp-clone { width: 100%; margin: 3px 0; padding: 0; line-height: 18px; font-size: 12px; border: 1px solid #ccc; background-color: #fafafa; }
+div#user-submitted-posts textarea.usp-textarea { width: 90%; }
+div#user-submitted-posts fieldset.usp-images label { clear: both; width: 90%; }
+div#usp-upload-message { float: left; clear: both; font-size: 12px; }
+div#user-submitted-image { width: 50%; float: left; clear: both; }
+a#usp_add-another { float: left; clear: both; }
+div.usp-input-error { width: 80%; overflow: hidden; text-align: right; }

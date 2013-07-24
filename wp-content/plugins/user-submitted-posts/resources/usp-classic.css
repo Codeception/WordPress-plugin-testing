@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* 
+	User Submitted Posts - CSS Stylesheet (Classic)
+	http://perishablepress.com/user-submitted-posts/
+*/
+
+div#usp { overflow: hidden; width: 80%; } /* <- CHANGE FORM WIDTH */
+
+form#usp_form, ul#usp_list, ul#usp_list li, label.usp_label, input.usp_input, select.usp_select, textarea.usp_textarea, 
+input#user-submit-post, div#usp_upload-message, a#usp_add-another, input#user-submitted-image, input#user-submitted-post { 
+	width: 96%; float: left; clear: both; margin: 0; padding: 0; overflow: hidden; font: 13px/1 Helvetica, Arial, sans-serif; 
+	}
+#usp label.usp_label { margin: 8px 0 2px 0; }
+#usp input.usp_input { width: 75%; padding: 3px; font-size: 13px; line-height: 1; }
+#usp input.usp_input[type="hidden"] { display: none; }
+#usp input.usp_clone {}
+
+#usp textarea.usp_textarea {}
+#usp select.usp_select {}
+#usp option.usp_option {}
+
+#usp a#usp_add-another { outline: 0 none; width: auto; text-decoration: none; font-size: 11px; margin-bottom: 10px; }
+
+#usp div#usp_upload-message {}
+#usp div#usp_success_message { font-weight: bold; }
+
+#usp ul#usp_list,
+#usp ul#usp_list li { list-style: none outside none; }
+
+#usp li.usp_name {}
+#usp li.usp_url {}
+#usp li.usp_title {}
+#usp li.usp_tags {}
+#usp li.usp_category {}
+#usp li.usp_captcha {}
+#usp li.usp_content {}
+#usp li.usp_images {}
+#usp li.usp_submit {}
+
+#usp input#user-submitted-name {}
+#usp input#user-submitted-url {}
+#usp input#user-submitted-title {}
+#usp input#user-submitted-tags {}
+#usp select#user-submitted-category { width: 77%; padding: 2px 0; }
+#usp textarea#user-submitted-content { margin: 0 0 5px 0; padding: 3px; font-size: 13px; line-height: 1.2; }
+#usp input#user-submitted-image { margin-bottom: 7px; font-size: 11px; line-height: 1; }
+#usp input#user-submitted-post { width: 100px; margin: 5px 0 17px 0; padding: 3px; }
+
+div.usp-input-error { width: 75%; overflow: hidden; text-align: right; }
+div.usp-input-error span {}
+
+div.usp_text-editor { margin: 10px 0; }
+.usp-rich-textarea {}
