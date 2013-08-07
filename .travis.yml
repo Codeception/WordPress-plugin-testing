@@ -10,10 +10,11 @@ before_script:
   - sleep 3
 
   # installing wp-cli
-  - curl http://wp-cli.org/installer.sh > wp-installer.sh
-  - INSTALL_DIR='.' sh wp-installer.sh
+  - curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
+  - ln -s $HOME/.wp-cli/bin/wp wp
 
   # installing WP. Important to set URL same for acceptance tests
+  - sh wp db create
   - sh wp core install --url="http://127.0.0.1:4000" --title="UnTestEd" --admin_password="admin" --admin_email="davert.php@mailican.com"
 
   # activating test plugin
