@@ -5,7 +5,7 @@ php:
   - 5.5
 
 before_script:
-  - php -S 127.0.0.1:4000 &
+  - php -S 127.0.0.1:4000 -t "." > /dev/null &
   - curl https://raw.github.com/wp-cli/wp-cli.github.com/master/installer.sh | bash
   - sh $HOME/.wp-cli/bin/wp db create
   - sh $HOME/.wp-cli/bin/wp core install --title="UnTestEd" --admin_password="admin" --url="http://untested.com" --admin_email="davert.php@mailican.com"
