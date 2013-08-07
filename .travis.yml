@@ -14,10 +14,10 @@ before_script:
   - ln -s $HOME/.wp-cli/bin/wp wp
 
   # installing WP. Important to set URL same for acceptance tests
-  - wp core install --url="http://127.0.0.1:4000" --title="UnTestEd" --admin_password="admin" --admin_email="davert.php@mailican.com"
+  - sh wp core install --url="http://127.0.0.1:4000" --title="UnTestEd" --admin_password="admin" --admin_email="davert.php@mailican.com"
 
   # activating test plugin
-  - wp plugin activate user-submitted-posts
-  - wp post create --post_type=page --post_status=publish --post_title='Submit a Post' --post_content="[user-submitted-posts]"
+  - sh wp plugin activate user-submitted-posts
+  - sh wp post create --post_type=page --post_status=publish --post_title='Submit a Post' --post_content="[user-submitted-posts]"
 
 script: "php codecept.phar run"
