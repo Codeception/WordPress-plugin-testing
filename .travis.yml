@@ -19,6 +19,9 @@ before_script:
 
   # activating test plugin
   - sh wp plugin activate user-submitted-posts
+
+  # preparing data for test
+  - sh wp term create "Game of Drones" category
   - sh wp post create --post_type=page --post_status=publish --post_title='Submit a Post' --post_content="[user-submitted-posts]"
 
 script: "php codecept.phar run"
