@@ -1,4 +1,7 @@
 #!/usr/bin/bash
+curl http://wp-cli.org/installer.sh > wp-installer.sh
+INSTALL_DIR='.wp-cli' bash wp-installer.sh
+ln -s .wp-cli/bin/wp wp
 
 # installing WP. Important to set URL same for acceptance tests
 sh wp db create
@@ -12,4 +15,4 @@ sh wp term create "Game of Drones" category
 sh wp post create --post_type=page --post_status=publish --post_title='Submit a Post' --post_content="[user-submitted-posts]"
 
 # enabling "Game of Drones" category for user to submit post
-sh wp option update usp_options "{\"categories\": [1,2]}" --format=json'
+sh wp option update usp_options "{\"categories\": [1,2]}" --format=json
