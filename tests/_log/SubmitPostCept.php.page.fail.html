@@ -20,18 +20,16 @@
 <link rel="alternate" type="application/rss+xml" title="UnTestEd &raquo; Feed" href="http://127.0.0.1:5000/?feed=rss2" />
 <link rel="alternate" type="application/rss+xml" title="UnTestEd &raquo; Comments Feed" href="http://127.0.0.1:5000/?feed=comments-rss2" />
 <link rel="alternate" type="application/rss+xml" title="UnTestEd &raquo; Submit a Post Comments Feed" href="http://127.0.0.1:5000/?feed=rss2&#038;page_id=5" />
-<link rel='stylesheet' id='usp_style-css'  href='http://127.0.0.1:5000/wp-content/plugins/user-submitted-posts/resources/usp.css?ver=20130720' type='text/css' media='all' />
 <link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
 <link rel='stylesheet' id='twentytwelve-style-css'  href='http://127.0.0.1:5000/wp-content/themes/twentytwelve/style.css?ver=3.5.2' type='text/css' media='all' />
 <!--[if lt IE 9]>
 <link rel='stylesheet' id='twentytwelve-ie-css'  href='http://127.0.0.1:5000/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
 <![endif]-->
-<script type='text/javascript' src='http://127.0.0.1:5000/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
-<script type='text/javascript' src='http://127.0.0.1:5000/wp-content/plugins/user-submitted-posts/resources/usp.php?ver=20130720'></script>
 <script type='text/javascript' src='http://127.0.0.1:5000/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script>
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://127.0.0.1:5000/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://127.0.0.1:5000/wp-includes/wlwmanifest.xml" /> 
 <link rel='prev' title='Sample Page' href='http://127.0.0.1:5000/?page_id=2' />
+<link rel='next' title='Submit a Post' href='http://127.0.0.1:5000/?page_id=7' />
 <meta name="generator" content="WordPress 3.5.2" />
 <link rel='canonical' href='http://127.0.0.1:5000/?page_id=5' />
 	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
@@ -48,7 +46,7 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle">Menu</h3>
 			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
-			<div class="nav-menu"><ul><li ><a href="http://127.0.0.1:5000/" title="Home">Home</a></li><li class="page_item page-item-2"><a href="http://127.0.0.1:5000/?page_id=2">Sample Page</a></li><li class="page_item page-item-5 current_page_item"><a href="http://127.0.0.1:5000/?page_id=5">Submit a Post</a></li></ul></div>
+			<div class="nav-menu"><ul><li ><a href="http://127.0.0.1:5000/" title="Home">Home</a></li><li class="page_item page-item-2"><a href="http://127.0.0.1:5000/?page_id=2">Sample Page</a></li><li class="page_item page-item-5 current_page_item"><a href="http://127.0.0.1:5000/?page_id=5">Submit a Post</a></li><li class="page_item page-item-7"><a href="http://127.0.0.1:5000/?page_id=7">Submit a Post</a></li><li class="page_item page-item-9"><a href="http://127.0.0.1:5000/?page_id=9">Submit a Post</a></li></ul></div>
 		</nav><!-- #site-navigation -->
 
 			</header><!-- #masthead -->
@@ -64,7 +62,29 @@
 		</header>
 
 		<div class="entry-content">
-								</div><!-- .entry-content -->
+			
+<!-- User Submitted Posts @ http://perishablepress.com/user-submitted-posts/ -->
+<div id="user-submitted-posts">
+
+	
+	<form id="usp_form" method="post" data-validate="parsley" enctype="multipart/form-data" action="" novalidate>
+
+		
+		
+				<fieldset id="coldform_verify" style="display:none;">
+			<label for="user-submitted-verify">Human verification: leave this field empty.</label>
+			<input name="user-submitted-verify" type="text" value="">
+		</fieldset>
+		<div id="usp-submit">
+															<input name="user-submitted-post" id="user-submitted-post" type="submit" value="Submit Post">
+		</div>
+
+		
+	</form>
+</div>
+<script>(function(){var e = document.getElementById("coldform_verify"); if(e) e.parentNode.removeChild(e);})();</script>
+<!-- User Submitted Posts @ http://perishablepress.com/user-submitted-posts/ -->
+					</div><!-- .entry-content -->
 		<footer class="entry-meta">
 					</footer><!-- .entry-meta -->
 	</article><!-- #post -->
