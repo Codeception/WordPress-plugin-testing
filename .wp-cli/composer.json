@@ -1,0 +1,11 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+        "wp-cli/wp-cli": "@stable",
+        "d11wtq/boris": "@stable"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "vendor-dir": "vendor"
+    }
+}
