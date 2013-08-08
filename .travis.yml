@@ -15,4 +15,4 @@ before_script:
   # setting up
   - sh setup.sh
 
-script: "php codecept.phar run"
+script: "php codecept.phar run --steps"
